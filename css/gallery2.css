@@ -1,0 +1,119 @@
+*{box-sizing: border-box;}
+.top_bottom{
+    display: block;
+    background-color: #C0C0C0;
+    padding: 20px;
+    text-align: center;
+    border:  2px solid black;
+    border-radius: 15px;
+    font-family: sans-serif;
+    margin: 5px;
+}
+.btn{
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+}
+.up{
+    background-color: #228B22;
+    border-color: #228B22;
+}
+.home{
+    background-color: #1E90FF;
+    border-color: #1E90FF;
+}
+.tape{
+    display:flex;
+    height: 132px;
+    width: auto;
+    margin: 10px;
+    overflow: auto;
+    white-space: nowrap; 
+}
+.pic{  
+    height: 100px;
+    margin: 5px 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+.center{
+    display: flex;
+    height: auto;
+    margin: auto; 
+    position: relative;
+}
+.screen{
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+.bigPic{
+    display: flex;
+    float: left;
+    height:590px;
+    box-shadow: 10px 10px 5px gray;
+    border:  2px solid black;
+    margin: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    visibility: hidden;
+    padding: 5px;
+}
+.h1{
+    color: blue;
+}
+.citate{
+    font-size: 20px;
+    font-style: italic;
+}
+.author{
+    text-align: right;
+}
+.arrow_box{
+    display: flex;
+    float: left;
+}
+.arrow{
+    cursor: pointer;
+    width: auto;
+    top: 40%;
+    margin: auto;
+    padding: 16px;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 1.0s ease;
+}
+.next{
+    position: absolute;
+    right: 0px;
+    border-radius: 10px 0px 0px 10px;
+}
+.previous{
+    position: absolute;
+    left: 0px; 
+    border-radius: 0px 10px 10px 0px;
+}
+.arrow:hover{
+    background-color: #C0C0C0;
+}
+.pic:hover{
+    cursor = "wait";
+}
+@media (max-width: 600px) {
+    .citate{
+        font-size: 12px;
+    }
+@keyframes fade {
+/* Устанавливаем и изменяем степень прозрачности: */
+from {
+    opacity: 0.4
+}
+to {
+    opacity: 1
+}
+    

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Мой сайт</title>
+        <!-- Отображать страницу в масшабе 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- для корректного отображения в старых браузерах -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Нормализуем стили -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <!-- Подключаем собственные стили -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="pic/favicon.png">
+    </head>
+    <body>
+        <div class="top_bottom">
+            <img class="my_avatar" src="pic/index/avatar.jpg" height=60px alt="Аватар">
+            <div class="my_head">
+                <div class="title">
+                    <p class="text">Добро пожаловать на мой сайт.</p>
+                    <h1  class="h1" id="hay"></h1>
+                </div>
+            </div>
+            <nav class="navigator">
+                <a class="nav_str" href="page/about.html">О себе</a>
+                <a class="nav_str" href="page/gallery2.html">Галерея</a>
+                <a class="nav_str" href="page/portfolio.html">Мои работы</a>
+                <a class="nav_str" href="page/contacts.html">Контакты</a>
+            </nav>
+        </div> 
+        <div class="demo">
+        </div>
+        <div class="top_bottom">
+            <blockquote class="citate" cite="https://ru.citaty.net/tsitaty/613544-mark-tven-cherez-20-let-vy-budete-bolshe-razocharovany-temi-ve/">"Через 20 лет вы будете больше разочарованы теми вещами, которые вы не делали, чем теми, которые вы сделали. Так отчальте от тихой пристани. Почувствуйте попутный ветер в вашем парусе. Двигайтесь вперед, действуйте, открывайте!"</blockquote>
+            <p class="citate author">Марк Твен</p>
+        </div>
+        <script type="text/javascript">
+            let now = new Date();
+            let hour = now.getHours();
+            let text = document.getElementById("hay");
+            if(hour > 4 && hour <= 10){text.textContent = "Доброе утро.";}
+            else if(hour > 10 && hour <= 17){text.textContent = "Добрый день.";}
+            else if(hour > 17 && hour <= 22){text.textContent = "Добрый вечер.";}
+            else if(hour <= 4 || hour > 22){text.textContent = "Доброй ночи.";}
+        </script> 
+    </body>
+</html>
